@@ -47,8 +47,8 @@ body {
   border-right: 4px ridge #c0c0c0;
 }
 
-/* Sets the color to black (instead of the default blue) and removes the underline */
-#menu-container a {
+/* Sets the text color to black (instead of the default blue) and removes the underline */
+#menu-container a, #menu-mobile-container a {
   color: black;
   text-decoration: none;
   font-size: 1.4em;
@@ -61,10 +61,25 @@ body {
 
 /* --- Mobile Section --- */
 
-/* Hides the menu on mobile screens */
+/* Hides the mobile menu on desktops */
+#menu-mobile-container {
+  display: none;
+}
+
+/* Hides the desktop menu on mobile screens */
 @media (max-width: 768px) {
   #menu-container {
     display: none;
+  }
+  #menu-mobile-container { /* Works like <p>, each block is a new line */
+    display: block;
+  }
+  #layout { /* Changes the site layout to vertical */
+    flex-direction: column;
+  }
+  #content { /*Centers #content on mobile */
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
