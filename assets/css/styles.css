@@ -50,9 +50,6 @@ img {
   padding: 10px;
   box-sizing: border-box; /* Prevents the menu from becoming too wide */
   border-right: 4px ridge #c0c0c0;
-  -moz-text-size-adjust: 100%; /* Prevents mobile browsers from adjusting the text size */
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
 }
 
 /* Sets the color to black (instead of the default blue) and removes the underline */
