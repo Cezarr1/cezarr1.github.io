@@ -14,6 +14,11 @@ body {
   min-height: 100vh;
 }
 
+/* Resize images for the mobile screens */
+img {
+  max-width: 100%;
+}
+
 /* --- Content Section --- */
 
 /* Positions table with page content and sets it to a certain size */
@@ -45,6 +50,9 @@ body {
   padding: 10px;
   box-sizing: border-box; /* Prevents the menu from becoming too wide */
   border-right: 4px ridge #c0c0c0;
+  -moz-text-size-adjust: 100%; /* Prevents mobile browsers from adjusting the text size */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 /* Sets the color to black (instead of the default blue) and removes the underline */
@@ -57,20 +65,6 @@ body {
 /* Empty gaps between menu "buttons" */
 #menu-container table {
   margin-bottom: 15px;
-}
-
-/* --- Mobile Section --- */
-
-/* Prevents mobile browsers from adjusting the text size */
-* { /* Asterisk = every single element on the page */
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-/* Resize images for the mobile screens */
-img {
-  max-width: 100%;
 }
 
 /* ;-; */
