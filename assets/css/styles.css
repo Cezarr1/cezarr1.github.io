@@ -1,13 +1,10 @@
+/* --- General Section --- */
+
 /* Removes the empty frame added by some browsers and slightly increases the text size */
 body {
   margin: 0;
   font-family: "Times New Roman", serif;
   font-size: 1.1em;
-}
-
-/* Resize images for the mobile screens */
-img {
-  max-width: 100%;
 }
 
 /* Places items side by side and extends the menu to the bottom of the page */
@@ -17,11 +14,13 @@ img {
   min-height: 100vh;
 }
 
+/* --- Content Section --- */
+
 /* Positions table with page content and sets it to a certain size */
 #content {
   width: 900px;
   max-width: 100%;
-  padding: 10px;
+  padding: 10px; /* Empty space between the container and its content */
   margin-left: auto; /* Centers table in the middle of the window */
   margin-right: auto;
 }
@@ -37,14 +36,14 @@ img {
   width: 100%;
 }
 
-/* */
+/* --- Menu Section --- */
+
 #menu-container {
   width: 150px;
-  flex-shrink: 0;
-  overflow-y: auto;
+  flex-shrink: 0; /* Keep the menu in the same width no matter what */
   background-color: #018281;
   padding: 10px;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Prevents the menu from becoming too wide */
   border-right: 4px ridge #c0c0c0;
 }
 
@@ -58,6 +57,20 @@ img {
 /* Empty gaps between menu "buttons" */
 #menu-container table {
   margin-bottom: 15px;
+}
+
+/* --- Mobile Section --- */
+
+/* Prevents mobile browsers from adjusting the text size */
+* { /* Asterisk = every single element on the page */
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Resize images for the mobile screens */
+img {
+  max-width: 100%;
 }
 
 /* ;-; */
