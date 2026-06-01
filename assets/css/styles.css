@@ -14,11 +14,6 @@ body {
   min-height: 100vh;
 }
 
-/* Resize images for the mobile screens */
-img {
-  max-width: 100%;
-}
-
 /* --- Content Section --- */
 
 /* Positions table with page content and sets it to a certain size */
@@ -62,6 +57,20 @@ img {
 /* Empty gaps between menu "buttons" */
 #menu-container table {
   margin-bottom: 15px;
+}
+
+/* --- Mobile Section --- */
+
+/* Hides the menu on mobile screens */
+@media (max-width: 768px) {
+  #menu-container {
+    display: none;
+  }
+}
+
+/* Resize images for the mobile screens */
+img {
+  max-width: 100%;
 }
 
 /* ;-; */
