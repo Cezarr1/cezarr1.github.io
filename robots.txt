@@ -1,0 +1,4 @@
+Sitemap: https://cezarr1.github.io/sitemap.xml
+
+User-agent: *
+Disallow:
